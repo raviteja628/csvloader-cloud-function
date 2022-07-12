@@ -1,6 +1,6 @@
 import os
 from google.cloud import bigquery
-def csv_loader_ravi_ravi(data, context):
+def csv_loader_ravi(data, context):
         client = bigquery.Client()
         dataset_id = os.environ['DATASET']
         dataset_ref = client.dataset(dataset_id)
